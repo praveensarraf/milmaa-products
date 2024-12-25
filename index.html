@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milmaa - Single Product Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Scroll Top Button -->
+    <button type="button" class="scrollTop" id="scrollTop" aria-label="Scroll to top"></button>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'  style="cursor: pointer;"></i>
+            <div class="logo"><a href="./index.html">Milmaa</a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name"><a href="./index.html">Milmaa</a></span>
+                    <i class='bx bx-x' style="cursor: pointer;"></i>
+                </div>
+                <ul class="links">
+                    <li class="active"><a href="#">Home</a></li>
+
+                    <li class="flavors">
+                        <a href="#">Our Flavors</a>
+                        <div class="flavors-box">
+                            <div class="flavors-items">
+                                <div class="flavors-item">
+                                    <h1>Flavors 1</h1>
+                                    <ul>
+                                        <li><a href="#">Oats Milk</a></li>
+                                        <li><a href="#">Banana Milk</a></li>
+                                        <li><a href="#">Soya Milk</a></li>
+                                        <li><a href="#">Strawberry Milk</a></li>
+                                    </ul>
+                                </div>
+                                <div class="flavors-item">
+                                    <h1>Flavors 2</h1>
+                                    <ul>
+                                        <li><a href="#">Oats Milk</a></li>
+                                        <li><a href="#">Banana Milk</a></li>
+                                        <li><a href="#">Soya Milk</a></li>
+                                        <li><a href="#">Strawberry Milk</a></li>
+                                    </ul>
+                                </div>
+                                <div class="flavors-item">
+                                    <h1>Flavors 3</h1>
+                                    <ul>
+                                        <li><a href="#">Oats Milk</a></li>
+                                        <li><a href="#">Banana Milk</a></li>
+                                        <li><a href="#">Soya Milk</a></li>
+                                        <li><a href="#">Strawberry Milk</a></li>
+                                    </ul>
+                                </div>
+                                <div class="flavors-item">
+                                    <h1>Flavors 4</h1>
+                                    <ul>
+                                        <li><a href="#">Oats Milk</a></li>
+                                        <li><a href="#">Banana Milk</a></li>
+                                        <li><a href="#">Soya Milk</a></li>
+                                        <li><a href="#">Strawberry Milk</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="#">About us</a></li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                        <i class='bx bxs-chevron-down blog-arrow arrow  '></i>
+                        <ul class="blog-sub-menu sub-menu">
+                            <li><a href="#">Blog - Listings</a></li>
+                            <li><a href="#">Blog - With Left Sidebar</a></li>
+                            <li class="more">
+                                <span>
+                                    <a href="#">Blog - With Right Sidebar</a>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Shop</a>
+                        <i class='bx bxs-chevron-down shop-arrow arrow '></i>
+                        <ul class="shop-sub-menu sub-menu">
+                            <li><a href="#">Shop - Listings</a></li>
+                            <li><a href="#">Shop - With Left Sidebar</a></li>
+                            <li><a href="#">Shop - With Right Sidebar</a></li>
+                            <li><a href="#">Shop Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="searchCart">
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="cart-box">
+                    <i class='bx bx-shopping-bag'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- heroSection -->
+    <div class="container-fluid milk-section">
+        <img src="./assets//images/img-2.png" alt="" class="milk-background">
+        <div class="image-container">
+            <img src="./assets//images/img-1.jpg" alt="">
+        </div>
+        <div class="text-container">
+            <h1>The best alternative to cow's milk</h1>
+            <p>Organic milk as healthy as cow’s milk is the new idea of faster and healthy lifestyle.</p>
+            <a href="#" class="btn-get-milmaa">Get Milmaa</a>
+        </div>
+        <img src="./assets/images/img-3.png" alt="" class="milk-front">
+    </div>
+
+
+    <!-- plant-based milk -->
+    <div class="plant-based-section">
+        <h2>A wide variety<br>plant-based milk</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="./assets/images/intro-img-1.jpg" alt="Almond Milk">
+                    <div class="number">01</div>
+                </div>
+                <div class="card-text"><a href="#">Almond Milk</a></div>
+            </div>
+            <div class="card">
+                <div class="card-text"><a href="#">Soy Milk</a></div>
+                <div class="image-wrapper">
+                    <img src="./assets/images/intro-img-2.jpg" alt="Soy Milk">
+                    <div class="number">02</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="./assets/images/intro-img-3.jpg" alt="Oats Milk">
+                    <div class="number">03</div>
+                </div>
+                <div class="card-text"><a href="#">Oats Milk</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FACTS 1 -->
+    <div class="factsBox">
+        <div class="facts-bulb">
+            <h1>FACTS</h1>
+            <div class="fact-bulb-img">
+                <img src="./assets/images/facts-bulb.png" alt="">
+            </div>
+        </div>
+
+        <div class="facts-text">
+            <p>Plant-based milk is rich in vitamins and minerals, and low in cholesterol. It is also advised to people
+                who have a slow digestive system and in faster recovery.</p>
+        </div>
+
+    </div>
+
+
+    <!-- Milk details -->
+    <div class="container-fluid px-5" id="milkdetails">
+        <div class="container py-5">
+            <div class="row my-5">
+                <div class="col-md-4">
+                    <div class="row milkdetails-types">
+                        <div class="col-12">
+                            <a href="#">
+                                <div class="row">
+                                    <div class="col-4 milkvarietyimg">
+                                        <img src="./assets/images/variety-1.png" alt="">
+                                    </div>
+                                    <div class="col-8">
+                                        <h1 class="milkvariety">Soy Milk</h1>
+                                        <p>Help support healthy muscles and organs. Rich in Omega3</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 my-5">
+                            <a href="#">
+                                <div class="row">
+                                    <div class="col-4 milkvarietyimg">
+                                        <img src="./assets/images/variety-2.png" alt="">
+                                    </div>
+                                    <div class="col-8">
+                                        <h1 class="milkvariety">Dates Milk</h1>
+                                        <p>Healthy hair & skin, weight loss, prevents heart disease</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="#">
+                                <div class="row">
+                                    <div class="col-4 milkvarietyimg">
+                                        <img src="./assets/images/variety-3.png" alt="">
+                                    </div>
+                                    <div class="col-8">
+                                        <h1 class="milkvariety" 1>Oats Milk</h1>
+                                        <p>Good source of calcium, vitamin A, & vitamin D</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <a href="#">
+                                <div class="row">
+                                    <div class="col-4 milkvarietyimg">
+                                        <img src="./assets/images/variety-4.png" alt="">
+                                    </div>
+                                    <div class="col-8">
+                                        <h1 class="milkvariety">Almond Milk</h1>
+                                        <p>Strengthen your bones, reduces heart disease, rich in vitamin D</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/img-4.png" class="img-fluid p-2" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-12 mb-3 milkdetailshead">
+                            <h1>We bring the best plant based milk right at your door steps</h1>
+                        </div>
+                        <div class="col-12 mt-5 mb-3">
+                            <ul class="milkdetailslist">
+                                <li>Cold pressed & processed organically</li>
+                                <li class="my-4">No flavours added</li>
+                                <li>Rated 5 stars. Over 1 million reviews</li>
+                                <li class="my-4">In-house factory</li>
+                                <li>150+ Delivery points</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-12 sugerfreeimg">
+                                    <img src="./assets/images/sugerfree.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid p-md-5 p-3 text-center milkforeveryone">
+        <div class="row">
+            <div class="col-12">
+                <h1>Plant based milk for everyone at any age</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Our Products -->
+    <div class="container-fluid ourProducts p-5">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="row px-5 ourProductsBox">
+                        <div class="col-12 ourProductsImg">
+                            <img src="./assets/images/product-1.png" alt="">
+                        </div>
+                        <div class="col-12 ourProductsText">
+                            <a href="#">Oats Milk</a>
+                            <p><span>₹100.00</span> ₹90.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-lg-0 my-5">
+                    <div class="row px-5 ourProductsBox">
+                        <div class="col-12 ourProductsImg">
+                            <img src="./assets/images/product-2.png" alt="">
+                        </div>
+                        <div class="col-12 ourProductsText">
+                            <a href="#">Soya Milk</a>
+                            <p><span>₹50.00</span> ₹20.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row px-5 ourProductsBox">
+                        <div class="col-12 ourProductsImg">
+                            <img src="./assets/images/product-4.png" alt="">
+                        </div>
+                        <div class="col-12 ourProductsText">
+                            <a href="#">Banana Milk</a>
+                            <p><span>₹100.00</span> ₹90.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our BLog -->
+    <div class="container-fluid ourBlog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center p-5 mb-5 ourBlogText">Our Blog</div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ourBlogCard">
+                        <div class="ourBlogImgBox">
+                            <img src="./assets/images/blog-1.jpg" class="card-img-top ourBlogImg" alt="...">
+                        </div>
+                        <div class="card-body blogCardText mt-2 p-4">
+                            <h5 class="card-title mb-2"><span><i class="fa-regular fa-calendar-days"></i></span> 07 Jan
+                                2022</h5>
+                            <a href="#">Best canned milk available in market</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-md-0 mt-5">
+                    <div class="ourBlogCard">
+                        <div class="ourBlogImgBox">
+                            <img src="./assets/images/blog-2.jpg" class="card-img-top ourBlogImg" alt="...">
+                        </div>
+                        <div class="card-body blogCardText mt-2 p-4">
+                            <h5 class="card-title mb-2"><span><i class="fa-regular fa-calendar-days"></i></span> 07 Jan
+                                2022</h5>
+                            <a href="#">Fine steps to boil evaporated milk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                    <div class="ourBlogCard">
+                        <div class="ourBlogImgBox">
+                            <img src="./assets/images/blog-3.jpg" class="card-img-top ourBlogImg" alt="...">
+                        </div>
+                        <div class="card-body blogCardText mt-2 p-4">
+                            <h5 class="card-title mb-2"><span><i class="fa-regular fa-calendar-days"></i></span> 07 Jan
+                                2022</h5>
+                            <a href="#">Benefits of milk during pregnancy</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                    <div class="ourBlogCard">
+                        <div class="ourBlogImgBox">
+                            <img src="./assets/images/blog-4.jpg" class="card-img-top ourBlogImg" alt="...">
+                        </div>
+                        <div class="card-body blogCardText mt-2 p-4">
+                            <h5 class="card-title mb-2"><span><i class="fa-regular fa-calendar-days"></i></span> 07 Jan
+                                2022</h5>
+                            <a href="#">Which Milk Should You Choose for Coffee</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FACTS 2-->
+    <div class="factsBox py-md-0 py-5">
+        <div class="facts-bulb">
+            <h1>FACTS</h1>
+            <div class="fact-bulb-img">
+                <img src="./assets/images/facts-bulb.png" alt="">
+            </div>
+        </div>
+
+        <div class="facts-text">
+            <p>
+                Vegan milk or plant based milk is a lactose free substitute to the well known cow milk. Reasons you
+                should move to vegan milk are the great taste and the low amounts of fat in most plant based milks.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- FAQ -->
+    <div class="container-fluid py-md-5 py-2 faq">
+        <div class="container px-md-5 px-0">
+            <div class="row">
+                <div class="col-md-5 p-0 faqImgBox">
+                    <img src="./assets/images/faq.png" alt="">
+                </div>
+
+                <div class="col-md-7 p-md-5 faqAccordionBox">
+                    <div class="faqAccordion">
+                        <div class="collapsible-accordion">
+                            <div class="collapsible-item">
+                                <input type="checkbox" id="rad1" name="radio" class="faqInput">
+                                <label class="collapsible-item-label" for="rad1">Is plant milk allergic to
+                                    humans?</label>
+                                <div class="collapsible-item-content">
+                                    Sed elementum tempus egestas sed sed risus pretium quam vulputate. Eleifend quam
+                                    adipiscing vitae proin. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla
+                                    est ullamcorper eget nulla facilisi etiam. Nulla porttitor massa id neque amis mus
+                                    nulla.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="collapsible-accordion">
+                            <div class="collapsible-item">
+                                <input type="checkbox" id="rad2" name="radio" class="faqInput">
+                                <label class="collapsible-item-label" for="rad2">Are there any preservatives in
+                                    Milmaa?</label>
+                                <div class="collapsible-item-content">
+                                    Sed elementum tempus egestas sed sed risus pretium quam vulputate. Eleifend quam
+                                    adipiscing vitae proin. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla
+                                    est ullamcorper eget nulla facilisi etiam. Nulla porttitor massa id neque amis mus
+                                    nulla.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="collapsible-accordion">
+                            <div class="collapsible-item">
+                                <input type="checkbox" id="rad3" name="radio" class="faqInput">
+                                <label class="collapsible-item-label" for="rad3">What is lactose-free milk?</label>
+                                <div class="collapsible-item-content">
+                                    Sed elementum tempus egestas sed sed risus pretium quam vulputate. Eleifend quam
+                                    adipiscing vitae proin. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla
+                                    est ullamcorper eget nulla facilisi etiam. Nulla porttitor massa id neque amis mus
+                                    nulla.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible-accordion">
+                            <div class="collapsible-item">
+                                <input type="checkbox" id="rad4" name="radio" class="faqInput">
+                                <label class="collapsible-item-label" for="rad4">What is ultra-pasteurized milk?</label>
+                                <div class="collapsible-item-content">
+                                    Sed elementum tempus egestas sed sed risus pretium quam vulputate. Eleifend quam
+                                    adipiscing vitae proin. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla
+                                    est ullamcorper eget nulla facilisi etiam. Nulla porttitor massa id neque amis mus
+                                    nulla.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible-accordion">
+                            <div class="collapsible-item">
+                                <input type="checkbox" id="rad5" name="radio" class="faqInput">
+                                <label class="collapsible-item-label" for="rad5">Which milk is right for kids?</label>
+                                <div class="collapsible-item-content">
+                                    Sed elementum tempus egestas sed sed risus pretium quam vulputate. Eleifend quam
+                                    adipiscing vitae proin. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla
+                                    est ullamcorper eget nulla facilisi etiam. Nulla porttitor massa id neque amis mus
+                                    nulla.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FACTS 3-->
+    <div class="factsBox pt-md-0 pt-5">
+        <div class="facts-bulb">
+            <h1>FACTS</h1>
+            <div class="fact-bulb-img">
+                <img src="./assets/images/facts-bulb.png" alt="">
+            </div>
+        </div>
+
+        <div class="facts-text">
+            <p>
+                Oat Milk Makes a Great Base for Lattes or Addition to Tea. Plant-based milk is rich in vitamins and
+                minerals, and low in cholesterol. It is also advised to people who have a slow digestive system.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Customers Talk - Testimonial -->
+    <div class="container-fluid py-md-5 py-2 testimonial">
+        <div class="container p-md-5 p-2">
+            <h2 class="text-center my-5 customersTalk">Customers Talk</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner my-5">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-5">
+                                <div class="testimonial-box">
+                                    <div class="stars">★★★★★</div>
+                                    <h5>Better milk, better day</h5>
+                                    <p>Tortor aliquam nulla facilisi cras fermentum odio. Vehicula ipsum a arcu cursus
+                                        vitae.</p>
+                                    <span>Mila Margurite</span>, <small>Homemaker</small>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mt-md-5">
+                                <div class="testimonial-box">
+                                    <div class="stars">★★★★★</div>
+                                    <h5>Variety of flavors indeed</h5>
+                                    <p>Mollis nunc sed id semper risus in. Tortor posuere ac ut consequat semper.</p>
+                                    <span>Maresi Tomei</span>, <small>Engineer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-5">
+                                <div class="testimonial-box">
+                                    <div class="stars">★★★★★</div>
+                                    <h5>Delicious and creamy</h5>
+                                    <p>Pharetra massa massa ultricies mi. Integer feugiat scelerisque varius morbi.</p>
+                                    <span>James Carter</span>, <small>Designer</small>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mt-md-5">
+                                <div class="testimonial-box">
+                                    <div class="stars">★★★★★</div>
+                                    <h5>Always fresh</h5>
+                                    <p>Neque volutpat ac tincidunt vitae semper quis. Curabitur gravida arcu ac tortor.
+                                    </p>
+                                    <span>Emily Novak</span>, <small>Chef</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-5">
+                                <div class="testimonial-box">
+                                    <div class="stars">★★★★★</div>
+                                    <h5>Highly recommended</h5>
+                                    <p>Aliquet lectus proin nibh nisl condimentum id. Urna molestie at elementum eu
+                                        facilisis.</p>
+                                    <span>Michael Lee</span>, <small>Teacher</small>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mt-md-5">
+                                <div class="testimonial-box">
+                                    <div class="stars">★★★★★</div>
+                                    <h5>Perfect for families</h5>
+                                    <p>Turpis cursus in hac habitasse platea dictumst. Auctor urna nunc id cursus metus.
+                                    </p>
+                                    <span>Sarah Connor</span>, <small>Parent</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Our Gallery -->
+    <div class="container-fluid py-5 px-md-5 px-1 gallery">
+        <div class="container px-md-5">
+            <div class="row instaShot text-center">
+                <h1>Our Insta Shots</h1>
+            </div>
+            <div class="row">
+                <img src="./assets/images/blog-5.jpg" alt="">
+                <img src="./assets/images/blog-6.jpg" alt="">
+                <img src="./assets/images/blog-7.jpg" alt="">
+                <img src="./assets/images/blog-8.jpg" alt="">
+            </div>
+            <div class="row gallery-link">
+                <h1><a href="#">Follow Us - milmaa</a></h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- News Letter -->
+    <div class="container-fluid py-5 px-lg-5 px-2 newsletter">
+        <div class="container px-lg-5 px-0">
+            <div class="newsletter-contents">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>Subscribe to Newsletter</h1>
+                        <p>Get latest offers & news</p>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-3">
+                        <div class="newsletter-mail">
+                            <input type="text" placeholder="your email">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="container-fluid px-lg-5 px-3">
+        <div class="container px-lg-5 px-0 footer">
+            <div class="row px-5 pb-3">
+                <div class="col-lg-3 px-lg-5 px-0">
+                    <ul class="footerMenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 px-0">
+                    <ul class="footerMenu">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 pe-lg-5 pe-0 social-links-box">
+                    <h1>Milmaa</h1>
+
+                    <p>Follow Us</p>
+
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="#"><i class='fa-brands fa-facebook'></i></a></li>
+                            <li><a href="#"><i class='fa-brands fa-x-twitter'></i></a></li>
+                            <li><a href="#"><i class='fa-brands fa-linkedin'></i></a></li>
+                            <li><a href="#"><i class='fa-brands fa-instagram'></i></a></li>
+                            <li><a href="#"><i class='fa-brands fa-youtube'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 py-4 ps-lg-5 ps-0">
+                    <div>
+                        932 Galvin St. Pompano Beach, FL 33060
+                    </div>
+                    <div class="my-4">
+                        Call Us: <span class="fw-bold">(334) 336 3346</span>
+                    </div>
+                    <div class="footer-mail">
+                        <a href="mailto:milmaa@example.com">milmaa@example.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row my-4 copyright">
+                <div>
+                    <span>©</span>
+                    <a href="#">Milmaa Single Product Shop</a>
+                    <span id="copyrightYear"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ionIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Javascript -->
+    <script src='./js/script.js'></script>
+</body>
+
+</html>
